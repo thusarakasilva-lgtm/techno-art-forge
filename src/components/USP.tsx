@@ -1,15 +1,10 @@
-import { Eye, Brain, Plug, Recycle, TrendingUp } from "lucide-react";
+import { Eye, Plug, Recycle, TrendingUp } from "lucide-react";
 
 const usps = [
   {
     icon: Eye,
     title: "Real-Time Visibility",
     description: "Access live images of your refrigerator contents anytime, anywhere"
-  },
-  {
-    icon: Brain,
-    title: "AI-Powered Suggestions",
-    description: "Intelligent notifications and recipe ideas based on what you have"
   },
   {
     icon: Plug,
@@ -47,7 +42,7 @@ export const USP = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {usps.map((usp, index) => (
             <div 
               key={index}

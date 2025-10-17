@@ -92,19 +92,11 @@ const Dashboard = () => {
               <div className="absolute top-1/2 right-2 -translate-y-1/2 w-3 h-24 bg-gray-400 dark:bg-gray-600 rounded-full shadow-md"></div>
               
               <div className="aspect-[9/16] max-h-[600px] mx-auto bg-black rounded-lg overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent"></div>
-                
-                <video
+                <img 
+                  src="/src/assets/hero-fridge.jpg"
+                  alt="Live fridge interior view"
                   className="w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%23000' width='100' height='100'/%3E%3C/svg%3E"
-                >
-                  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                />
 
                 <div className="absolute top-4 left-4 flex items-center gap-2 bg-red-600 text-white px-3 py-1.5 rounded-full shadow-lg">
                   <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>

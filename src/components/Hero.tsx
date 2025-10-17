@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-fridge.jpg";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.png";
 
 export const Hero = () => {
   return (
@@ -16,11 +16,16 @@ export const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Logo */}
         <div className="flex justify-center mb-12 animate-fade-in">
-          <img 
-            src={logo} 
-            alt="FridgeEye - Smart Refrigerator Camera System" 
-            className="h-24 w-auto object-contain"
-          />
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary via-secondary to-primary opacity-50 blur-xl group-hover:opacity-75 transition-opacity duration-500 rounded-full"></div>
+            <div className="relative bg-black/90 backdrop-blur-sm p-6 rounded-2xl border-2 border-primary/30 group-hover:border-primary/60 transition-all duration-300 shadow-strong">
+              <img 
+                src={logo} 
+                alt="FridgeEye - Smart Refrigerator Camera System" 
+                className="h-20 w-auto object-contain"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
