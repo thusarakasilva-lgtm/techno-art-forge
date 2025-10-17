@@ -15,14 +15,23 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Logo */}
-        <div className="flex justify-center mb-12 animate-fade-in">
-          <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary via-secondary to-primary opacity-50 blur-xl group-hover:opacity-75 transition-opacity duration-500 rounded-full"></div>
-            <div className="relative bg-black/90 backdrop-blur-sm p-6 rounded-2xl border-2 border-primary/30 group-hover:border-primary/60 transition-all duration-300 shadow-strong">
+        <div className="flex justify-center mb-16 animate-fade-in">
+          <div className="relative group cursor-pointer">
+            {/* Outer glow effect */}
+            <div className="absolute -inset-8 bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 opacity-60 blur-2xl group-hover:opacity-90 transition-all duration-700 animate-pulse"></div>
+            
+            {/* Secondary glow layer */}
+            <div className="absolute -inset-6 bg-gradient-to-r from-primary via-secondary to-primary opacity-40 blur-xl group-hover:opacity-60 transition-all duration-500"></div>
+            
+            {/* Logo container */}
+            <div className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 rounded-3xl border-2 border-amber-500/40 group-hover:border-amber-400/80 transition-all duration-300 shadow-[0_0_50px_rgba(251,191,36,0.3)] group-hover:shadow-[0_0_80px_rgba(251,191,36,0.5)] group-hover:scale-105">
+              {/* Inner subtle glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-amber-500/10 rounded-3xl"></div>
+              
               <img 
                 src={logo} 
                 alt="FridgeEye - Smart Refrigerator Camera System" 
-                className="h-20 w-auto object-contain"
+                className="h-28 w-auto object-contain relative z-10 drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]"
               />
             </div>
           </div>
