@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import heroImage from "@/assets/hero-fridge.jpg";
+import logo from "@/assets/logo.jpg";
 
 export const Hero = () => {
   return (
@@ -13,6 +14,15 @@ export const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
+        {/* Logo */}
+        <div className="flex justify-center mb-12 animate-fade-in">
+          <img 
+            src={logo} 
+            alt="FridgeEye - Smart Refrigerator Camera System" 
+            className="h-24 w-auto object-contain"
+          />
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-white space-y-8 animate-fade-in">
@@ -80,19 +90,6 @@ export const Hero = () => {
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-            </div>
-            
-            {/* Floating notification card */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-4 shadow-strong animate-slide-up">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
-                  <span className="text-2xl">🥗</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Lettuce expires soon!</p>
-                  <p className="text-sm text-muted-foreground">Use in next 2 days</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

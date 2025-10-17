@@ -1,4 +1,4 @@
-import { Camera, Smartphone, Cloud, Leaf, Zap, Shield } from "lucide-react";
+import { Camera, Smartphone, Video, Leaf, Zap, Shield } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
@@ -10,12 +10,12 @@ const features = [
   {
     icon: Smartphone,
     title: "Mobile App Integration",
-    description: "Access your fridge contents in real-time. Get expiry notifications, low-stock alerts, and smart recipe suggestions based on available ingredients."
+    description: "Access your fridge inventory from anywhere. Plan your shopping efficiently and buy exactly what you need."
   },
   {
-    icon: Cloud,
-    title: "Cloud Synchronization",
-    description: "Your data is securely stored and accessible from all your devices. Never lose track of your inventory."
+    icon: Video,
+    title: "Live Fridge View",
+    description: "Watch inside your fridge in real-time from anywhere. See exactly what you have before you shop, ensuring you buy only what you need."
   },
   {
     icon: Leaf,
